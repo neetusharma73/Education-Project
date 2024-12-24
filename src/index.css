@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+}
+
+body {
+  background: #f5f5f5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.container {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.btn {
+  background: white;
+  color: chocolate;
+  padding: 14px 25px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn img {
+  width: 25px;
+  margin-left: 20px;
+}
+
+.btn.dark-btn {
+  background: #7d7db0;
+  color: rgb(24, 23, 23);
+}
+
+/* Media Queries */
+
+/* Large Screens (1200px and above) */
+@media (max-width: 1200px) {
+  .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .btn {
+    padding: 14px 22px;
+    font-size: 15px;
+  }
+}
+
+/* Tablets (1024px and below) */
+@media (max-width: 1024px) {
+  .container {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+
+  .btn img {
+    width: 20px;
+    margin-left: 15px;
+  }
+}
+
+/* Mobile Screens (768px and below) */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .btn {
+    font-size: 13px;
+    padding: 10px 18px;
+    width: 100%;
+  }
+
+  .btn img {
+    width: 18px;
+    margin-left: 10px;
+  }
+}
+
+/* Small Mobile Screens (480px and below) */
+@media (max-width: 480px) {
+  .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 10px 15px;
+    width: 100%;
+  }
+
+  .btn img {
+    width: 15px;
+    margin-left: 8px;
+  }
+}
+

@@ -1,0 +1,103 @@
+.programs {
+    margin: 80px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    overflow-x: auto; /* Horizontal scroll for very narrow screens */
+  }
+  
+  .program {
+    flex-basis: 31%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow */
+    transition: transform 0.4s ease; /* Add subtle hover scaling */
+  }
+  
+  .program:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  .program img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+    filter: brightness(70%); /* Faded effect */
+    transition: filter 0.4s ease; /* Smooth fade effect on hover */
+  }
+  
+  .program:hover img {
+    filter: brightness(50%);
+  }
+  
+  .caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+  
+  .caption img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .caption p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .program:hover .caption {
+    opacity: 1;
+    transform: translate(-50%, -45%);
+  }
+  
+  /* Responsive Design */
+  
+  /* Tablets and smaller desktops */
+  @media (max-width: 1024px) {
+    .program {
+      flex-basis: 45%; /* 2 items per row */
+    }
+  }
+  
+  /* Mobile phones */
+  @media (max-width: 640px) {
+    .program {
+      flex-basis: 100%; /* 1 item per row */
+    }
+  
+    .caption img {
+      width: 50px; /* Adjust icon size for smaller screens */
+      height: 50px;
+    }
+  
+    .caption p {
+      font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+  }
+  
+  /* Very small phones */
+  @media (max-width: 480px) {
+    .programs {
+      gap: 10px; /* Reduce spacing */
+    }
+  
+    .caption p {
+      font-size: 0.8rem; /* Smaller font for tiny screens */
+    }
+  }
+  

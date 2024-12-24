@@ -1,0 +1,98 @@
+.footer {
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgb(107, 98, 102);
+    padding: 15px 0;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  }
+  
+  .footer ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Ensure items can wrap on small screens */
+  }
+  
+  .footer ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+    padding: 5px 10px;
+  }
+  
+  .footer .social-icons {
+    display: flex;
+    justify-content: flex-end; /* Align social icons to the right */
+    gap: 15px; /* Space between social icons */
+  }
+  
+  /* Responsive Design */
+  
+  /* Tablets and smaller desktops */
+  @media (max-width: 1024px) {
+    .footer {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px 0;
+    }
+  
+    .footer ul {
+      justify-content: center;
+      width: 100%;
+    }
+  
+    .footer ul li {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  
+    .footer .social-icons {
+      justify-content: center;
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+  
+  /* Mobile phones */
+  @media (max-width: 640px) {
+    .footer {
+      padding: 10px 0;
+    }
+  
+    .footer ul li {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  
+    .footer .social-icons {
+      gap: 10px; /* Smaller space between icons */
+      margin-top: 10px;
+    }
+  }
+  
+  /* Very small phones */
+  @media (max-width: 480px) {
+    .footer {
+      padding: 10px 0;
+      text-align: center; /* Center align footer items */
+    }
+  
+    .footer ul {
+      justify-content: center;
+      width: 100%;
+    }
+  
+    .footer ul li {
+      margin-left: 5px;
+      margin-right: 5px;
+      font-size: 12px; /* Smaller font size */
+    }
+  
+    .footer .social-icons {
+      justify-content: center;
+      margin-top: 10px;
+    }
+  }
+  

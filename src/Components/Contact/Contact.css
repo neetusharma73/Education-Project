@@ -1,0 +1,126 @@
+.contact {
+    margin: 80px auto;
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  }
+  
+  .contact-col {
+    flex-basis: 48%;
+    color: rgb(52, 45, 42);
+    margin-bottom: 20px; /* Add space between columns on smaller screens */
+  }
+  
+  .contact-col h3 {
+    color: rgb(25, 25, 25);
+    font-weight: 500;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact-col h3 img {
+    width: 35px;
+    margin-left: 10px;
+  }
+  
+  .contact-col p {
+    max-width: 400px;
+    list-style: none;
+  }
+  
+  .contact-col ul li {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .contact-col ul li img {
+    width: 25px;
+    margin-right: 10px;
+  }
+  
+  .contact form input, .contact form textarea {
+    display: block;
+    width: 100%;
+    background: rgb(166, 166, 165);
+    padding: 15px;
+    border: 0;
+    outline: 0;
+    margin-bottom: 5px;
+    resize: none;
+  }
+  
+  .contact-col span {
+    display: block;
+    margin: 20px 0;
+  }
+  
+  /* Responsive Design */
+  
+  /* Tablets and smaller desktops */
+  @media (max-width: 1024px) {
+    .contact {
+      flex-direction: column; /* Stack contact columns vertically */
+      align-items: flex-start; /* Align items to the start */
+    }
+  
+    .contact-col {
+      flex-basis: 100%; /* Full width for each column */
+      margin-bottom: 30px; /* Add space between columns */
+    }
+  
+    .contact-col h3 {
+      font-size: 22px; /* Slightly smaller title font */
+    }
+  
+    .contact-col p {
+      max-width: 100%; /* Allow paragraphs to take up full width */
+    }
+  }
+  
+  /* Mobile phones */
+  @media (max-width: 640px) {
+    .contact {
+      padding: 0 15px; /* Reduce horizontal padding */
+    }
+  
+    .contact-col h3 {
+      font-size: 20px; /* Adjust font size for smaller screens */
+    }
+  
+    .contact-col p {
+      font-size: 14px; /* Adjust font size for paragraphs */
+    }
+  
+    .contact form input, .contact form textarea {
+      padding: 12px; /* Adjust padding for input fields */
+    }
+  
+    .contact-col span {
+      font-size: 14px; /* Adjust font size for smaller screens */
+    }
+  }
+  
+  /* Very small phones */
+  @media (max-width: 480px) {
+    .contact-col h3 {
+      font-size: 18px; /* Smaller font size for heading */
+    }
+  
+    .contact-col p {
+      font-size: 12px; /* Smaller font size for paragraph */
+    }
+  
+    .contact form input, .contact form textarea {
+      padding: 10px; /* Reduced padding for smaller input fields */
+    }
+  
+    .contact-col ul li {
+      font-size: 12px; /* Smaller font size for list items */
+    }
+  }
+  
